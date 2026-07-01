@@ -86,7 +86,7 @@ export default function Login() {
     setLoading(true);
 
     try {
-      const BASE = "http://localhost:5000/api";
+      const BASE = `${import.meta.env.VITE_API_URL}/api`;
       let res, data;
 
       if (roleActif === "etudiant") {
